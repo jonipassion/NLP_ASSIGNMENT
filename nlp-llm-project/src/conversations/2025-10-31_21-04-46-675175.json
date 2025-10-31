@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful AI assistant that ONLY generates educational quizzes. Output JSON only — an array of questions. Each question object must include: question, type, options (if multiple-choice), answer, and difficulty."
+  },
+  {
+    "role": "user",
+    "content": "Create a JSON quiz about 'tf-idf' with hard difficulty questions. Each question must include question, type, options (if applicable), answer, and difficulty."
+  }
+]

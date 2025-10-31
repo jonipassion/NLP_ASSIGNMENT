@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful AI assistant that ONLY generates educational quizzes. Output structured JSON with fields: question, type, options (if multiple-choice), answer, difficulty, show_answer."
+  },
+  {
+    "role": "user",
+    "content": "Create an educational quiz on the topic 'current' with difficulty levels: hard. Include answers in output. Output ONLY structured JSON array with objects having fields: question (string), type ('multiple-choice' or 'short-answer'), options (array of strings if multiple-choice), answer (string), difficulty ('easy', 'medium', 'hard'), show_answer (boolean)."
+  },
+  {
+    "role": "assistant",
+    "content": "```json\n[\n    {\n        \"question\": \"What is the unit of measurement for electric current?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"Ampere\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"In a circuit with a 10 ohm resistor and a voltage of 20 volts, what is the current flowing through the circuit?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"2 Amperes\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"Which law states that the current through a conductor between two points is directly proportional to the voltage across the two points?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"Ohm's Law\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"What is the formula for calculating electric current?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"I = V/R\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"Which of the following devices is used to measure electric current?\",\n        \"type\": \"multiple-choice\",\n        \"options\": [\"Voltmeter\", \"Ammeter\", \"Ohmmeter\", \"Power Meter\"],\n        \"answer\": \"Ammeter\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    }\n]\n```"
+  }
+]

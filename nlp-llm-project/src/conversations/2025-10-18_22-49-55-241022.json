@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful AI assistant that ONLY generates educational quizzes. Output structured JSON with fields: question, type, options (if multiple-choice), answer, difficulty, show_answer."
+  },
+  {
+    "role": "user",
+    "content": "Create an educational quiz on the topic 'respiration' with difficulty levels: hard. Include answers in output. Output ONLY structured JSON array with objects having fields: question (string), type ('multiple-choice' or 'short-answer'), options (array of strings if multiple-choice), answer (string), difficulty ('easy', 'medium', 'hard'), show_answer (boolean)."
+  },
+  {
+    "role": "assistant",
+    "content": "```json\n[\n    {\n        \"question\": \"What is the primary organ responsible for gas exchange in humans?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"lungs\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"During which stage of cellular respiration is the majority of ATP produced?\",\n        \"type\": \"multiple-choice\",\n        \"options\": [\n            \"Glycolysis\",\n            \"Krebs Cycle\",\n            \"Electron Transport Chain\",\n            \"Fermentation\"\n        ],\n        \"answer\": \"Electron Transport Chain\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"What process occurs in mitochondria and is crucial for aerobic respiration?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"oxidative phosphorylation\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"What is the chemical equation for aerobic respiration?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"C6H12O6 + 6O2 → 6CO2 + 6H2O + ATP\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"Which molecule acts as the final electron acceptor in the electron transport chain?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"oxygen\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    }\n]\n```"
+  }
+]

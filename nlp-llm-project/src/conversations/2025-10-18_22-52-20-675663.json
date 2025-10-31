@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful AI assistant that ONLY generates educational quizzes. Output structured JSON with fields: question, type, options (if multiple-choice), answer, difficulty, show_answer."
+  },
+  {
+    "role": "user",
+    "content": "Create an educational quiz on the topic 'photosynthesis' with difficulty levels: medium. Include answers in output. Output ONLY structured JSON array with objects having fields: question (string), type ('multiple-choice' or 'short-answer'), options (array of strings if multiple-choice), answer (string), difficulty ('easy', 'medium', 'hard'), show_answer (boolean)."
+  },
+  {
+    "role": "assistant",
+    "content": "```json\n[\n    {\n        \"question\": \"What is the primary pigment involved in photosynthesis?\",\n        \"type\": \"multiple-choice\",\n        \"options\": [\n            \"Chlorophyll\",\n            \"Carotenoids\",\n            \"Anthocyanins\",\n            \"Xanthophyll\"\n        ],\n        \"answer\": \"Chlorophyll\",\n        \"difficulty\": \"medium\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"In which organelle does photosynthesis primarily occur?\",\n        \"type\": \"short-answer\",\n        \"answer\": \"Chloroplast\",\n        \"difficulty\": \"medium\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"What are the two main stages of photosynthesis?\",\n        \"type\": \"short-answer\",\n        \"answer\": \"Light-dependent reactions and light-independent reactions (Calvin Cycle)\",\n        \"difficulty\": \"medium\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"Which gas is consumed during photosynthesis?\",\n        \"type\": \"multiple-choice\",\n        \"options\": [\n            \"Carbon dioxide\",\n            \"Oxygen\",\n            \"Nitrogen\",\n            \"Hydrogen\"\n        ],\n        \"answer\": \"Carbon dioxide\",\n        \"difficulty\": \"medium\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"What is the main product of photosynthesis?\",\n        \"type\": \"short-answer\",\n        \"answer\": \"Glucose\",\n        \"difficulty\": \"medium\",\n        \"show_answer\": true\n    }\n]\n```"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful AI assistant that ONLY generates educational quizzes. Output structured JSON with fields: question, type, options (if multiple-choice), answer, difficulty, show_answer."
+  },
+  {
+    "role": "user",
+    "content": "Create an educational quiz on the topic 'energy' with difficulty levels: medium, hard. Include answers in output. Output ONLY structured JSON array with objects having fields: question (string), type ('multiple-choice' or 'short-answer'), options (array of strings if multiple-choice), answer (string), difficulty ('easy', 'medium', 'hard'), show_answer (boolean)."
+  },
+  {
+    "role": "assistant",
+    "content": "```json\n[\n    {\n        \"question\": \"What is the unit of measurement for energy in the International System of Units (SI)?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"Joule\",\n        \"difficulty\": \"medium\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"Which of the following is a renewable source of energy?\",\n        \"type\": \"multiple-choice\",\n        \"options\": [\n            \"Coal\",\n            \"Natural Gas\",\n            \"Solar Power\",\n            \"Nuclear Energy\"\n        ],\n        \"answer\": \"Solar Power\",\n        \"difficulty\": \"medium\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"What is the law of conservation of energy?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"Energy cannot be created or destroyed, only transformed from one form to another.\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"Which type of energy is stored in the bonds of chemical compounds?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"Chemical energy\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"What form of energy is primarily produced by wind turbines?\",\n        \"type\": \"short-answer\",\n        \"options\": [],\n        \"answer\": \"Mechanical energy\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    },\n    {\n        \"question\": \"Which of the following processes converts nuclear energy into thermal energy?\",\n        \"type\": \"multiple-choice\",\n        \"options\": [\n            \"Fission\",\n            \"Fusion\",\n            \"Radioactive decay\",\n            \"Both fission and fusion\"\n        ],\n        \"answer\": \"Both fission and fusion\",\n        \"difficulty\": \"hard\",\n        \"show_answer\": true\n    }\n]\n```"
+  }
+]
